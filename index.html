@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>وقتي - تنظيم المهام والمواعيد للأطفال</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
     <!-- القائمة العلوية -->
     <nav class="top-nav">
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="وقتي">
+                <img src="images/logo.png" alt="وقتي" />
             </div>
             <div class="nav-links">
-                <a href="#" class="active">الرئيسية</a>
-                <a href="#tasks">مهامي</a>
-                <a href="#rewards">المكافآت</a>
-                <a href="#profile">حسابي</a>
+                <a href="#" class="active">🏠 الرئيسية</a>
+                <a href="#tasks">📝 مهامي</a>
+                <a href="#rewards">🎁 المكافآت</a>
+                <a href="#profile">👤 حسابي</a>
             </div>
             <div class="user-menu">
                 <span class="points">🌟 النقاط: <span id="userPoints">0</span></span>
-                <button class="login-btn" id="loginBtn">تسجيل الدخول</button>
+                <button class="login-btn" id="loginBtn">🚪 دخول</button>
             </div>
         </div>
     </nav>
@@ -33,15 +33,15 @@
         <!-- قسم المهام -->
         <section id="tasks" class="tasks-section">
             <div class="container">
-                <h2>مهامي اليومية</h2>
+                <h2>📝 مهامي اليومية</h2>
                 <div class="tasks-grid">
                     <div class="add-task-card">
                         <button id="addTaskBtn">
-                            <i class="fas fa-plus"></i>
-                            <span>إضافة مهمة جديدة</span>
+                            <i class="fas fa-plus-circle fa-2x"></i>
+                            <span>إضافة مهمة ممتعة</span>
                         </button>
                     </div>
-                    <!-- ستتم إضافة المهام هنا ديناميكياً -->
+                    <!-- المهام تظهر هنا -->
                 </div>
             </div>
         </section>
@@ -49,9 +49,9 @@
         <!-- قسم المكافآت -->
         <section id="rewards" class="rewards-section">
             <div class="container">
-                <h2>المكافآت المتاحة</h2>
+                <h2>🎁 المكافآت المتاحة</h2>
                 <div class="rewards-grid">
-                    <!-- ستتم إضافة المكافآت هنا ديناميكياً -->
+                    <!-- المكافآت تظهر هنا -->
                 </div>
             </div>
         </section>
@@ -59,7 +59,7 @@
         <!-- قسم التقويم -->
         <section id="calendar" class="calendar-section">
             <div class="container">
-                <h2>تقويمي</h2>
+                <h2>📅 تقويمي</h2>
                 <div class="calendar-wrapper">
                     <div class="calendar-header">
                         <button id="prevMonth"><i class="fas fa-chevron-right"></i></button>
@@ -67,29 +67,29 @@
                         <button id="nextMonth"><i class="fas fa-chevron-left"></i></button>
                     </div>
                     <div class="calendar-grid" id="calendarGrid">
-                        <!-- سيتم إنشاء التقويم ديناميكياً -->
+                        <!-- التقويم يتم توليده هنا -->
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- نوافذ منبثقة -->
+    <!-- نافذة تسجيل الدخول -->
     <div class="modal" id="loginModal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>تسجيل الدخول</h2>
+            <h2>🔐 تسجيل الدخول</h2>
             <form id="loginForm">
                 <div class="form-group">
-                    <label for="email">البريد الإلكتروني</label>
-                    <input type="email" id="email" required>
+                    <label for="email">📧 البريد الإلكتروني</label>
+                    <input type="email" id="email" required />
                 </div>
                 <div class="form-group">
-                    <label for="password">كلمة المرور</label>
-                    <input type="password" id="password" required>
+                    <label for="password">🔑 كلمة المرور</label>
+                    <input type="password" id="password" required />
                 </div>
                 <button type="submit">دخول</button>
-                <p>ليس لديك حساب؟ <a href="#" id="registerLink">سجل الآن</a></p>
+                <p>ليس لديك حساب؟ <a href="#" id="registerLink">سجل الآن 🚀</a></p>
             </form>
         </div>
     </div>
@@ -98,33 +98,34 @@
     <div class="modal" id="addTaskModal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>إضافة مهمة جديدة</h2>
+            <h2>➕ إضافة مهمة جديدة</h2>
             <form id="addTaskForm">
                 <div class="form-group">
-                    <label for="taskTitle">عنوان المهمة</label>
-                    <input type="text" id="taskTitle" required>
+                    <label for="taskTitle">✏️ عنوان المهمة</label>
+                    <input type="text" id="taskTitle" required />
                 </div>
                 <div class="form-group">
-                    <label for="taskTime">وقت المهمة</label>
-                    <input type="time" id="taskTime" required>
+                    <label for="taskTime">⏰ وقت المهمة</label>
+                    <input type="time" id="taskTime" required />
                 </div>
                 <div class="form-group">
-                    <label for="taskPoints">النقاط</label>
-                    <input type="number" id="taskPoints" min="1" value="10">
+                    <label for="taskPoints">🌟 النقاط</label>
+                    <input type="number" id="taskPoints" min="1" value="10" />
                 </div>
-                <button type="submit">إضافة المهمة</button>
+                <button type="submit">🎯 إضافة المهمة</button>
             </form>
         </div>
     </div>
 
     <footer>
         <div class="container">
-            <p>جميع الحقوق محفوظة &copy; 2024 - تطبيق وقتي</p>
+            <p>جميع الحقوق محفوظة &copy; 2024 - تطبيق وقتي 💡</p>
         </div>
     </footer>
 
+    <!-- سكريبتات -->
     <script src="js/main.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/tasks.js"></script>
 </body>
-</html> 
+</html>
